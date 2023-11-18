@@ -1,7 +1,57 @@
 .main {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../assets/dandelion.png');
-    background-position: 90% -10rem;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/dandelion.png');
+  background-position: 90% -15rem;
+  background-repeat: no-repeat;
+  background-size: 140rem;
+
+  @media(max-width: 500px) {
+    background-position: 90% 10rem;
+  }
+
+  @media (max-width: 400px) {
+    background-image: none;
+  }
+
+  &_text {
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 7.7rem;
+    letter-spacing: 0em;
+    color: #757aa5;
+    margin-left: 8%;
+    padding-top: 10%;
+
+    @media(max-width: 500px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 3rem;
+    }
+  }
+
+  &_link {
+    @extend .main_text;
+    display: block;
+    width: 14%;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-top: 15rem;
+    text-decoration: none;
+    padding-top: 0%;
+    padding-left: 3.5rem;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 0.5rem;
+
+    @media(max-width: 500px) {
+      width: 22%;
+      padding: 1rem 1rem 1rem 1rem;
+    }
+
+    @media (max-width: 400px) {
+      width: 62%;
+    }
+  }
 }
