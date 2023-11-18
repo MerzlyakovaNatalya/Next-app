@@ -3,12 +3,13 @@
   height: 10rem;
 
   &_link {
+    display: block;
     font-size: 3rem;
     font-weight: 200;
     line-height: 7.7rem;
     letter-spacing: 0em;
     text-align: center;
     color: #757aa5;
-    margin-left: 50rem;
+    margin: 0 auto;
   }
 }

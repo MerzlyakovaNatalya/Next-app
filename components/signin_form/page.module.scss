@@ -1,4 +1,6 @@
 .form {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   &_wrap {
     width: 30%;
     display: flex;
@@ -6,12 +8,14 @@
     margin-left: 19%;
     font-size: 3rem;
     background-color: white;
+
+    @media (max-width: 400px) {
+      margin-left: 1rem;
+    }
   }
 
   &_input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 50px rgb(223, 212, 212) inset;
     -webkit-text-fill-color: #655972;
-    display: block;
     font-size: 3rem;
     font-weight: 200;
     line-height: 7.7rem;
@@ -29,7 +33,30 @@
     }
 
     @media (max-width: 400px) {
+      width: 30rem;
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &_button {
+    font-weight: 400;
+    line-height: 7.7rem;
+    letter-spacing: 0em;
+    color: #757aa5;
+    background-color: white;
+    border: 0;
+    font-size: 3rem;
+    font-weight: 200;
+    text-decoration: underline #e2e4f5;
+
+    @media (max-width: 400px) {
+      width: 29rem;
       font-size: 3rem;
     }
+  }
+
+  &.visible {
+    opacity: 1;
   }
 }

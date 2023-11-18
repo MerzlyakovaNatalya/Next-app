@@ -1,17 +1,15 @@
 // 'use client'
 
-import Link from "next/link"
 import { authConfig } from "@/configs/auth"
 import { getServerSession } from "next-auth"
-import { signOut } from "next-auth/react"
+import styles from './page.module.scss'
 
 const Profile = async () => {
-    // const session = await getServerSession(authConfig)
+     const session = await getServerSession(authConfig)
     return (
-        <div>
-            <h1>Profile</h1>
-            {/* <p>email: {session?.user?.email}</p> */}
-            {/* <Link href='#' onClick={() => signOut({callbackUrl: '/'})}>Выйти</Link> */}
+        <div className={styles.profile}>
+            <h1 className={styles.profile_title}>Добро пожаловать!</h1>
+            <p className={styles.profile_text}>Ваш email: {session?.user?.email}</p>
         </div>
     )
 }

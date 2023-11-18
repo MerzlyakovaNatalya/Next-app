@@ -1,0 +1,19 @@
+.profile {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 7.7rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #757aa5;
+
+  &_title {
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  &_text {
+    text-align: center;
+    margin-top: 2%;
+  }
+}
