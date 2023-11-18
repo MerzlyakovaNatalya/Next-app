@@ -1,0 +1,35 @@
+.form {
+  &_wrap {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 19%;
+    font-size: 3rem;
+    background-color: white;
+  }
+
+  &_input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px rgb(223, 212, 212) inset;
+    -webkit-text-fill-color: #655972;
+    display: block;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 7.7rem;
+    letter-spacing: 0em;
+    color: #757aa5;
+    margin: 3rem;
+    padding: 2rem;
+    text-align: center;
+    border: 0;
+    outline: none;
+    border-radius: 0.5rem;
+
+    @media (max-width: 500px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 3rem;
+    }
+  }
+}
