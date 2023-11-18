@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <p className={styles.main_text}>Для просмотра сайта необходимо авторизоваться</p>
-      <Link className={styles.main_link} href='#' onClick={() => signIn()}>Авторизация</Link>
+      <Link className={styles.main_link} href='/signin'>Авторизация</Link>
     </main>
   )
 }
