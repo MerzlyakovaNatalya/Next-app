@@ -1,6 +1,4 @@
 .form {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
   &_wrap {
     width: 30%;
     display: flex;
@@ -54,9 +52,5 @@
       width: 29rem;
       font-size: 3rem;
     }
-  }
-
-  &.visible {
-    opacity: 1;
   }
 }
