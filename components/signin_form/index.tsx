@@ -26,8 +26,8 @@ const SignInForm = () => {
   return (
     <div className={styles.form}>
       <form onSubmit={handleSubmit} className={styles.form_wrap}>
-        <input className={styles.form_input} type="email" name="email" required></input>
-        <input className={styles.form_input} type="password" name="password" required></input>
+        <input className={styles.form_input} type="email" name="email" placeholder='введите e-mail' required></input>
+        <input className={styles.form_input} type="password" name="password" placeholder='пароль' required></input>
         <button className={styles.form_button} type="submit">Войти</button>
       </form>
     </div>
